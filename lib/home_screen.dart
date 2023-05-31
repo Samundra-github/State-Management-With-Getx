@@ -93,7 +93,8 @@ class _GetxHomeState extends State<GetxHome> {
               // Get.toNamed('/tut_one', arguments: [
               //   'Samundra Bhandari',
               // ]);
-              Get.toNamed('/tut_two_a');
+              // Get.toNamed('/tut_two_a');
+              Get.toNamed('/tut_two_b');
             },
             child: const Text("Next Page"),
           ),

@@ -6,6 +6,7 @@ import 'package:flutter_application_1/tut_1/screens/tut_one_a.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one_b.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one_c.dart';
 import 'package:flutter_application_1/tut_2/screens/tut_2_a.dart';
+import 'package:flutter_application_1/tut_2/screens/tut_2_b.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/tut_one_b', page: () => const TuttorialOneB()),
         GetPage(name: '/tut_one_c', page: () => const TuttorialOneC()),
         GetPage(name: '/tut_two_a', page: () => const TuttorialTwoA()),
+        GetPage(name: '/tut_two_b', page: () => const TuttorialTwoB()),
       ],
     );
   }
