@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 class CounterController extends GetxController {
@@ -5,6 +6,8 @@ class CounterController extends GetxController {
 
   incrementCounter() {
     counter.value++;
-    print(counter.value);
+    if (kDebugMode) {
+      print(counter.value);
+    }
   }
 }
