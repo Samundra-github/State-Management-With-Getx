@@ -94,7 +94,9 @@ class _GetxHomeState extends State<GetxHome> {
               //   'Samundra Bhandari',
               // ]);
               // Get.toNamed('/tut_two_a');
-              Get.toNamed('/tut_two_b');
+              // Get.toNamed('/tut_two_b');
+              // Get.toNamed('/tut_three_b');
+              Get.toNamed('/tut_three_c');
             },
             child: const Text("Next Page"),
           ),

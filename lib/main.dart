@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home_screen.dart';
-import 'package:flutter_application_1/tut_1/language.dart';
+import 'package:flutter_application_1/tut_1/screens/language.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one_a.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one_b.dart';
 import 'package:flutter_application_1/tut_1/screens/tut_one_c.dart';
 import 'package:flutter_application_1/tut_2/screens/tut_2_a.dart';
 import 'package:flutter_application_1/tut_2/screens/tut_2_b.dart';
+import 'package:flutter_application_1/tut_3/screens/tut_3_a.dart';
+import 'package:flutter_application_1/tut_3/screens/tut_3_b.dart';
+import 'package:flutter_application_1/tut_3/screens/tut_3_c.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -40,6 +43,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/tut_one_c', page: () => const TuttorialOneC()),
         GetPage(name: '/tut_two_a', page: () => const TuttorialTwoA()),
         GetPage(name: '/tut_two_b', page: () => const TuttorialTwoB()),
+        GetPage(name: '/tut_three_a', page: () => const TuttorialThreeA()),
+        GetPage(name: '/tut_three_b', page: () => const TuttorialThreeB()),
+        GetPage(name: '/tut_three_c', page: () => const TuttorialThreeC()),
       ],
     );
   }
