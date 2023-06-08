@@ -55,7 +55,7 @@ class _TutorialFourAState extends State<TutorialFourA> {
                     loginController.loginApi();
                   },
                   child: loginController.loading.value
-                      ? const CircularProgressIndicator()
+                      ? Container()
                       : Container(
                           height: 45,
                           color: Colors.grey,
