@@ -4,14 +4,14 @@ import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-class TuttorialThreeB extends StatefulWidget {
-  const TuttorialThreeB({super.key});
+class TutorialThreeB extends StatefulWidget {
+  const TutorialThreeB({super.key});
 
   @override
-  State<TuttorialThreeB> createState() => _TuttorialThreeBState();
+  State<TutorialThreeB> createState() => _TutorialThreeBState();
 }
 
-class _TuttorialThreeBState extends State<TuttorialThreeB> {
+class _TutorialThreeBState extends State<TutorialThreeB> {
   FavoritesController favoritesController = Get.put(FavoritesController());
   @override
   Widget build(BuildContext context) {

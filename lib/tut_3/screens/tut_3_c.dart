@@ -5,14 +5,14 @@ import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-class TuttorialThreeC extends StatefulWidget {
-  const TuttorialThreeC({super.key});
+class TutorialThreeC extends StatefulWidget {
+  const TutorialThreeC({super.key});
 
   @override
-  State<TuttorialThreeC> createState() => _TuttorialThreeCState();
+  State<TutorialThreeC> createState() => _TutorialThreeCState();
 }
 
-class _TuttorialThreeCState extends State<TuttorialThreeC> {
+class _TutorialThreeCState extends State<TutorialThreeC> {
   ImagePickerController imagePickerController =
       Get.put(ImagePickerController());
   @override
@@ -54,6 +54,28 @@ class _TuttorialThreeCState extends State<TuttorialThreeC> {
                   ),
                   FaIcon(
                     FontAwesomeIcons.solidSquarePlus,
+                    size: 30,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            TextButton(
+              onPressed: () {
+                imagePickerController.getImageFromGallery();
+              },
+              child: const Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Pick a Photo"),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  FaIcon(
+                    FontAwesomeIcons.photoFilm,
                     size: 30,
                   ),
                 ],

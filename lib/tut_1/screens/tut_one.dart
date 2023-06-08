@@ -40,7 +40,7 @@ class _TutorialOneState extends State<TutorialOne> {
           Center(
             child: TextButton(
               onPressed: () {
-                Get.to(() => const TuttorialOneA());
+                Get.to(() => const TutorialOneA());
               },
               child: const Text("Go To Next Page"),
             ),

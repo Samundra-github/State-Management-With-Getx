@@ -4,14 +4,14 @@ import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:get/get.dart';
 // import 'package:get/get.dart';
 
-class TuttorialTwoA extends StatefulWidget {
-  const TuttorialTwoA({super.key});
+class TutorialTwoA extends StatefulWidget {
+  const TutorialTwoA({super.key});
 
   @override
-  State<TuttorialTwoA> createState() => _TuttorialTwoAState();
+  State<TutorialTwoA> createState() => _TutorialTwoAState();
 }
 
-class _TuttorialTwoAState extends State<TuttorialTwoA> {
+class _TutorialTwoAState extends State<TutorialTwoA> {
   @override
   void initState() {
     super.initState();

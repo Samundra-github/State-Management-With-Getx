@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class TuttorialOneB extends StatefulWidget {
-  const TuttorialOneB({super.key});
+class TutorialOneB extends StatefulWidget {
+  const TutorialOneB({super.key});
 
   @override
-  State<TuttorialOneB> createState() => _TuttorialOneBState();
+  State<TutorialOneB> createState() => _TutorialOneBState();
 }
 
-class _TuttorialOneBState extends State<TuttorialOneB> {
+class _TutorialOneBState extends State<TutorialOneB> {
   @override
   Widget build(BuildContext context) {
     // final height = MediaQuery.of(context).size.height * 1;

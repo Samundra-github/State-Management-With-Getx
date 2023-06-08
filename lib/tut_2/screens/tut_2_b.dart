@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:get/get.dart';
 
-class TuttorialTwoB extends StatefulWidget {
-  const TuttorialTwoB({super.key});
+class TutorialTwoB extends StatefulWidget {
+  const TutorialTwoB({super.key});
 
   @override
-  State<TuttorialTwoB> createState() => _TuttorialTwoBState();
+  State<TutorialTwoB> createState() => _TutorialTwoBState();
 }
 
-class _TuttorialTwoBState extends State<TuttorialTwoB> {
+class _TutorialTwoBState extends State<TutorialTwoB> {
   // double opacity = 0.1;
   SliderController sliderController = Get.put(SliderController());
   @override

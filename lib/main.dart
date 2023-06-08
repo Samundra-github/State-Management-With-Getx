@@ -10,6 +10,7 @@ import 'package:flutter_application_1/tut_2/screens/tut_2_b.dart';
 import 'package:flutter_application_1/tut_3/screens/tut_3_a.dart';
 import 'package:flutter_application_1/tut_3/screens/tut_3_b.dart';
 import 'package:flutter_application_1/tut_3/screens/tut_3_c.dart';
+import 'package:flutter_application_1/tut_4/tut_4_a.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -34,18 +35,19 @@ class MyApp extends StatelessWidget {
       locale: const Locale('en', 'US'),
 
       fallbackLocale: const Locale('en', 'US'),
-      home: const GetxHome(),
+      home: const TutorialFourA(),
       getPages: [
         GetPage(name: '/', page: () => const GetxHome()),
         GetPage(name: '/tut_one', page: () => TutorialOne()),
-        GetPage(name: '/tut_one_a', page: () => const TuttorialOneA()),
-        GetPage(name: '/tut_one_b', page: () => const TuttorialOneB()),
-        GetPage(name: '/tut_one_c', page: () => const TuttorialOneC()),
-        GetPage(name: '/tut_two_a', page: () => const TuttorialTwoA()),
-        GetPage(name: '/tut_two_b', page: () => const TuttorialTwoB()),
-        GetPage(name: '/tut_three_a', page: () => const TuttorialThreeA()),
-        GetPage(name: '/tut_three_b', page: () => const TuttorialThreeB()),
-        GetPage(name: '/tut_three_c', page: () => const TuttorialThreeC()),
+        GetPage(name: '/tut_one_a', page: () => const TutorialOneA()),
+        GetPage(name: '/tut_one_b', page: () => const TutorialOneB()),
+        GetPage(name: '/tut_one_c', page: () => const TutorialOneC()),
+        GetPage(name: '/tut_two_a', page: () => const TutorialTwoA()),
+        GetPage(name: '/tut_two_b', page: () => const TutorialTwoB()),
+        GetPage(name: '/tut_three_a', page: () => const TutorialThreeA()),
+        GetPage(name: '/tut_three_b', page: () => const TutorialThreeB()),
+        GetPage(name: '/tut_three_c', page: () => const TutorialThreeC()),
+        GetPage(name: '/tut_four_a', page: () => const TutorialFourA()),
       ],
     );
   }

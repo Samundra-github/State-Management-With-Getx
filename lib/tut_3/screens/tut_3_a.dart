@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:get/get.dart';
 
-class TuttorialThreeA extends StatefulWidget {
-  const TuttorialThreeA({super.key});
+class TutorialThreeA extends StatefulWidget {
+  const TutorialThreeA({super.key});
 
   @override
-  State<TuttorialThreeA> createState() => _TuttorialThreeAState();
+  State<TutorialThreeA> createState() => _TutorialThreeAState();
 }
 
-class _TuttorialThreeAState extends State<TuttorialThreeA> {
+class _TutorialThreeAState extends State<TutorialThreeA> {
   SwitchController switchController = Get.put(SwitchController());
   @override
   Widget build(BuildContext context) {

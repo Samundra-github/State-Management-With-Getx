@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class TuttorialOneC extends StatefulWidget {
-  const TuttorialOneC({super.key});
+class TutorialOneC extends StatefulWidget {
+  const TutorialOneC({super.key});
 
   @override
-  State<TuttorialOneC> createState() => _TuttorialOneCState();
+  State<TutorialOneC> createState() => _TutorialOneCState();
 }
 
-class _TuttorialOneCState extends State<TuttorialOneC> {
+class _TutorialOneCState extends State<TutorialOneC> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
