@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:get/get.dart';
+
+import '../../controller/getx_controller.dart';
 
 class TutorialThreeA extends StatefulWidget {
   const TutorialThreeA({super.key});

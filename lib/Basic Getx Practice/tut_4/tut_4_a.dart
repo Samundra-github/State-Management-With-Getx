@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/controller/getx_controller.dart';
 import 'package:get/get.dart';
+
+import '../controller/getx_controller.dart';
 
 class TutorialFourA extends StatefulWidget {
   const TutorialFourA({super.key});

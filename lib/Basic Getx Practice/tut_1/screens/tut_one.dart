@@ -1,7 +1,7 @@
 // ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/tut_1/screens/tut_one_a.dart';
+import 'package:flutter_application_1/Basic%20Getx%20Practice/tut_1/screens/tut_one_a.dart';
 import 'package:get/get.dart';
 
 class TutorialOne extends StatefulWidget {
