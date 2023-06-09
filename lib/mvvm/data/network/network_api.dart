@@ -8,14 +8,14 @@ import 'package:http/http.dart' as http;
 
 class NetworkApiServices extends BaseApiServices {
   @override
-  Future<dynamic> getApi(String Url) async {
+  Future<dynamic> getApi(String url) async {
     if (kDebugMode) {
-      print(Url);
+      print(url);
     }
     dynamic responseJson;
     try {
       final response =
-          await http.get(Uri.parse(Url)).timeout(const Duration(seconds: 10));
+          await http.get(Uri.parse(url)).timeout(const Duration(seconds: 10));
       responseJson = returnResponse(response);
     } on SocketException {
       throw ServerException('No Internet');
@@ -26,15 +26,15 @@ class NetworkApiServices extends BaseApiServices {
   }
 
   @override
-  Future<dynamic> postApi(dynamic data, String Url) async {
+  Future<dynamic> postApi(dynamic data, String url) async {
     if (kDebugMode) {
-      print(Url);
+      print(url);
     }
     dynamic responseJson;
     try {
       final response = await http
           .post(
-            Uri.parse(Url),
+            Uri.parse(url),
             body: jsonEncode(data),
           )
           .timeout(

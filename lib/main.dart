@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/mvvm/res/routes/routes.dart';
 import 'package:flutter_application_1/mvvm/view/splash_screen.dart';
 // import 'package:flutter_application_1/Basic%20Getx%20Practice/home_screen.dart';
 import 'package:get/get.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const SplashScreen(),
+      getPages: AppRoutes.appRoutes(),
       // translations: Languages(),
       // locale: const Locale('en', 'US'),
 
