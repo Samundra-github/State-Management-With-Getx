@@ -4,6 +4,8 @@ import 'package:flutter_application_1/mvvm/view/splash_screen.dart';
 // import 'package:flutter_application_1/Basic%20Getx%20Practice/home_screen.dart';
 import 'package:get/get.dart';
 
+import 'mvvm/res/language/language.dart';
+
 // import 'Basic Getx Practice/tut_1/screens/language.dart';
 // import 'Basic Getx Practice/tut_1/screens/tut_one.dart';
 // import 'Basic Getx Practice/tut_1/screens/tut_one_a.dart';
@@ -29,17 +31,16 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      // locale: Locale('en', 'US'),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
       home: const SplashScreen(),
       getPages: AppRoutes.appRoutes(),
-      // translations: Languages(),
-      // locale: const Locale('en', 'US'),
+      translations: Languages(),
+      locale: const Locale('np', 'NP'),
 
-      // fallbackLocale: const Locale('en', 'US'),
+      fallbackLocale: const Locale('en', 'US'),
       // home: const TutorialFourA(),
       // getPages: [
       //   GetPage(name: '/', page: () => const GetxHome()),
