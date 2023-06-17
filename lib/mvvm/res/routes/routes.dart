@@ -8,13 +8,13 @@ class AppRoutes {
         GetPage(
           name: RouteName.splashScreen,
           page: () => const SplashScreen(),
-          transitionDuration: const Duration(milliseconds: 250),
+          transitionDuration: const Duration(milliseconds: 300),
           transition: Transition.leftToRight,
         ),
         GetPage(
           name: RouteName.loginScreen,
           page: () => const LoginScreen(),
-          transitionDuration: const Duration(milliseconds: 250),
+          transitionDuration: const Duration(milliseconds: 300),
           transition: Transition.rightToLeft,
         ),
       ];
