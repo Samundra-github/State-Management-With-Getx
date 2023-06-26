@@ -22,20 +22,23 @@ class ReusableButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width: width,
-      decoration: BoxDecoration(
-        color: buttonColor,
-        borderRadius: BorderRadius.circular(radius),
+    return InkWell(
+      onTap: onPress,
+      child: Container(
+        height: height,
+        width: width,
+        decoration: BoxDecoration(
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(radius),
+        ),
+        child: loading
+            ? const Center(
+                child: CircularProgressIndicator(),
+              )
+            : Center(
+                child: Text(title),
+              ),
       ),
-      child: loading
-          ? const Center(
-              child: CircularProgressIndicator(),
-            )
-          : Center(
-              child: Text(title),
-            ),
     );
   }
 }

@@ -4,10 +4,15 @@ class Languages extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'en_US': {
-          'appBar': 'Welcome Samundra',
+          'name': 'Samundra',
+          'welcome_back': 'Welcome Back',
+          'login': 'Login',
+          'email_hint': 'Email',
+          'password_hint': 'Password',
         },
         'np_NP': {
-          'appBar': 'स्वागत छ समुन्द्र',
+          'name': 'समुन्द्र',
+          'welcome': 'स्वागत छ',
         },
       };
 }
