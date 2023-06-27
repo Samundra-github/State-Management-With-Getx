@@ -85,14 +85,19 @@ class _LoginViewState extends State<LoginView> {
               const SizedBox(
                 height: 40,
               ),
-              ReusableButton(
-                height: 50,
-                width: 100,
-                title: 'login'.tr,
-                onPress: () {
-                  if (_formKey.currentState!.validate()) {}
-                },
-                radius: 30,
+              Obx(
+                () => ReusableButton(
+                  height: 50,
+                  width: 100,
+                  title: 'login'.tr,
+                  loading: loginViewModel.loading.value,
+                  onPress: () {
+                    if (_formKey.currentState!.validate()) {
+                      loginViewModel.loginApi();
+                    }
+                  },
+                  radius: 30,
+                ),
               )
             ],
           ),

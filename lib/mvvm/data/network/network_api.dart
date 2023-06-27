@@ -35,7 +35,7 @@ class NetworkApiServices extends BaseApiServices {
       final response = await http
           .post(
             Uri.parse(url),
-            body: jsonEncode(data),
+            body: data,
           )
           .timeout(
             const Duration(seconds: 10),
@@ -46,6 +46,9 @@ class NetworkApiServices extends BaseApiServices {
     } on RequestTimeout {
       throw RequestTimeout('Request Timeout');
     }
+    if (kDebugMode) {
+      print(responseJson);
+    }
     return responseJson;
   }
 
@@ -53,9 +56,16 @@ class NetworkApiServices extends BaseApiServices {
     switch (response.statusCode) {
       case 200:
         dynamic responseJson = jsonDecode(response.body);
+        if (kDebugMode) {
+          print(responseJson);
+        }
         return responseJson;
       case 400:
-        throw InvalidUrlException('Invalid URL');
+        dynamic responseJson = jsonDecode(response.body);
+        if (kDebugMode) {
+          print(responseJson);
+        }
+        return responseJson;
       default:
         throw FetchDataException(
             'Error Occured while making connection ${response.statusCode}');
