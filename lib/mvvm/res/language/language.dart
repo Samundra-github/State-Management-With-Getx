@@ -9,6 +9,7 @@ class Languages extends Translations {
           'login': 'Login',
           'email_hint': 'Email',
           'password_hint': 'Password',
+          'home': 'Home',
         },
         'np_NP': {
           'name': 'समुन्द्र',

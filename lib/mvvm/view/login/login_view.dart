@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/mvvm/res/components/reusable_button.dart';
 import 'package:flutter_application_1/mvvm/utils/utils.dart';
-import 'package:flutter_application_1/mvvm/view_models/controller/login_view_model.dart';
+import 'package:flutter_application_1/mvvm/view_models/controller/login/login_view_model.dart';
 import 'package:get/get.dart';
 
 class LoginView extends StatefulWidget {
