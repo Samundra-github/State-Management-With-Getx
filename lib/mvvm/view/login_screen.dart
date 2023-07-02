@@ -51,23 +51,21 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Center(
         child: Column(
           children: [
-            ReusableButton(
+            const ReusableButton(
               height: 50,
               width: 100,
               radius: 30,
               title: 'Login',
-              onPress: () {},
             ),
             SizedBox(
               height: Get.height * .1,
             ),
-            ReusableButton(
+            const ReusableButton(
               height: 75,
               width: 200,
               radius: 30,
               title: 'Add to Cart',
               loading: false,
-              onPress: () {},
             ),
           ],
         ),

@@ -12,15 +12,19 @@ class AppException implements Exception {
 }
 
 class ServerException extends AppException {
-  ServerException([String? message]) : super(message, '');
+  ServerException([String? message]) : super(message, 'Server Error');
+}
+
+class InternetException extends AppException {
+  InternetException([String? message]) : super(message, 'No internet');
 }
 
 class RequestTimeout extends AppException {
-  RequestTimeout([String? message]) : super(message, '');
+  RequestTimeout([String? message]) : super(message, 'Request Timeout');
 }
 
 class InvalidUrlException extends AppException {
-  InvalidUrlException([String? message]) : super(message, '');
+  InvalidUrlException([String? message]) : super(message, 'Invalid Url');
 }
 
 class FetchDataException extends AppException {

@@ -18,9 +18,9 @@ class NetworkApiServices extends BaseApiServices {
           await http.get(Uri.parse(url)).timeout(const Duration(seconds: 10));
       responseJson = returnResponse(response);
     } on SocketException {
-      throw ServerException('No Internet');
+      throw InternetException('');
     } on RequestTimeout {
-      throw RequestTimeout('Request Timeout');
+      throw RequestTimeout('');
     }
     return responseJson;
   }
@@ -42,9 +42,9 @@ class NetworkApiServices extends BaseApiServices {
           );
       responseJson = returnResponse(response);
     } on SocketException {
-      throw ServerException('No Internet');
+      throw InternetException('');
     } on RequestTimeout {
-      throw RequestTimeout('Request Timeout');
+      throw RequestTimeout('');
     }
     if (kDebugMode) {
       print(responseJson);

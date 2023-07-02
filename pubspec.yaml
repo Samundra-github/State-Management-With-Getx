@@ -40,6 +40,7 @@ dependencies:
   shared_preferences:
   fluttertoast:
   lottie:
+  connectivity_plus:
 
 dev_dependencies:
   flutter_test:

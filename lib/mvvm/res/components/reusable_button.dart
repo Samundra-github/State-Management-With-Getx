@@ -10,35 +10,30 @@ class ReusableButton extends StatelessWidget {
       required this.height,
       required this.width,
       required this.title,
-      required this.onPress,
       required this.radius});
 
   final double height, width;
   final bool loading;
   final double radius;
-  final VoidCallback onPress;
   final String title;
   final Color textColor, buttonColor;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPress,
-      child: Container(
-        height: height,
-        width: width,
-        decoration: BoxDecoration(
-          color: buttonColor,
-          borderRadius: BorderRadius.circular(radius),
-        ),
-        child: loading
-            ? const Center(
-                child: CircularProgressIndicator(),
-              )
-            : Center(
-                child: Text(title),
-              ),
+    return Container(
+      height: height,
+      width: width,
+      decoration: BoxDecoration(
+        color: buttonColor,
+        borderRadius: BorderRadius.circular(radius),
       ),
+      child: loading
+          ? const Center(
+              child: CircularProgressIndicator(),
+            )
+          : Center(
+              child: Text(title),
+            ),
     );
   }
 }

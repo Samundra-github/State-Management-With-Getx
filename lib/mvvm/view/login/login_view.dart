@@ -86,17 +86,19 @@ class _LoginViewState extends State<LoginView> {
                 height: 40,
               ),
               Obx(
-                () => ReusableButton(
-                  height: 50,
-                  width: 100,
-                  title: 'login'.tr,
-                  loading: loginViewModel.loading.value,
-                  onPress: () {
+                () => InkWell(
+                  onTap: () {
                     if (_formKey.currentState!.validate()) {
                       loginViewModel.loginApi();
                     }
                   },
-                  radius: 30,
+                  child: ReusableButton(
+                    height: 50,
+                    width: 100,
+                    title: 'login'.tr,
+                    loading: loginViewModel.loading.value,
+                    radius: 30,
+                  ),
                 ),
               )
             ],
